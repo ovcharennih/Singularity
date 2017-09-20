@@ -20,7 +20,7 @@ export PATH=/bin:/usr/bin:/usr/local/bin:/usr/local/cuda/bin:
 ### install keras + tensorflow + other useful packages
 ###
 apt-get update
-apt-get install -y libhdf5-dev graphviz locales python python-pip
+apt-get install -y libhdf5-dev graphviz locales python python-pip git
 locale-gen en_US.UTF-8
 apt-get clean
 
@@ -28,7 +28,6 @@ pip install --upgrade pip
 pip install tensorflow-gpu==1.3.0
 pip install keras==2.0.8
 pip install Pillow scikit-learn pandas matplotlib notebook ipython==5.5.0
-echo "Install 3DUnetCNN"
 pip install git+https://github.com/edraizen/3DUnetCNN.git
 
 ###

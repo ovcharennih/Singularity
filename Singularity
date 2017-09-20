@@ -20,13 +20,14 @@ export PATH=/bin:/usr/bin:/usr/local/bin:/usr/local/cuda/bin:
 ### install keras + tensorflow + other useful packages
 ###
 apt-get update
-apt-get install -y libhdf5-dev graphviz locales python-dev python-pip
+apt-get install -y libhdf5-dev graphviz locales python python-pip
 locale-gen en_US.UTF-8
 apt-get clean
 
-pip3 install tensorflow-gpu==1.3.0
-pip3 install keras==2.0.8
-pip3 install Pillow scikit-learn pandas matplotlib notebook ipython
+pip install tensorflow-gpu==1.3.0
+pip install keras==2.0.8
+pip install Pillow scikit-learn pandas matplotlib notebook ipython
+pip install git+https://github.com/edraizen/3DUnetCNN.git
 
 ###
 ### destination for NIH HPC bind mounts

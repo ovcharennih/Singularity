@@ -27,7 +27,7 @@ apt-get clean
 pip install --upgrade pip
 pip install tensorflow-gpu==1.3.0
 pip install keras==2.0.8
-pip install Pillow scikit-learn pandas matplotlib notebook ipython
+pip install Pillow scikit-learn pandas matplotlib notebook ipython==5.5.0
 echo "Install 3DUnetCNN"
 pip install git+https://github.com/edraizen/3DUnetCNN.git
 

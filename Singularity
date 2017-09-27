@@ -20,7 +20,7 @@ export PATH=/bin:/usr/bin:/usr/local/bin:/usr/local/cuda/bin:
 ### install keras + tensorflow + other useful packages
 ###
 apt-get update
-apt-get install -y libhdf5-dev graphviz locales python python-pip git
+apt-get install -y libhdf5-dev graphviz locales python python-pip git python-vtk
 locale-gen en_US.UTF-8
 apt-get clean
 

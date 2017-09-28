@@ -20,22 +20,21 @@ export PATH=/bin:/usr/bin:/usr/local/bin:/usr/local/cuda/bin:
 ### install keras + tensorflow + other useful packages
 ###
 apt-get update
-apt-get install -y libhdf5-dev graphviz locales python python-pip git python-vtk=8.0.0
+apt-get install -y libhdf5-dev graphviz locales python python-pip git xvfb
 locale-gen en_US.UTF-8
 apt-get clean
 
 pip install --upgrade pip
 pip install tensorflow-gpu==1.3.0
 pip install keras==2.0.8
-pip install setuptools wheel Pillow scikit-learn pandas matplotlib ipython==5.5.0
+pip install setuptools wheel Pillow scikit-learn pandas matplotlib ipython==5.5.0 PyQt4
 #pip install git+https://github.com/edraizen/3DUnetCNN.git
-pip install h5py
+pip install h5pyi
+pip install pyside
 pip install mayavi
 pip install --upgrade notebook
 jupyter nbextension install --py mayavi --user
 jupyter nbextension enable mayavi --user --py
-apt-get install build-essential cmake libqt4-dev libphonon-dev libxml2-dev libxslt1-dev qtmobility-dev libqtwebkit-dev
-pip install pyside
 ###
 ### destination for NIH HPC bind mounts
 ###

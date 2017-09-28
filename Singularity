@@ -34,6 +34,8 @@ pip install mayavi
 pip install --upgrade notebook
 jupyter nbextension install --py mayavi --user
 jupyter nbextension enable mayavi --user --py
+apt-get install build-essential cmake libqt4-dev libphonon-dev libxml2-dev libxslt1-dev qtmobility-dev libqtwebkit-dev
+pip install pyside
 ###
 ### destination for NIH HPC bind mounts
 ###

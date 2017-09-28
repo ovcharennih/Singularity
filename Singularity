@@ -33,7 +33,7 @@ pip install h5py
 pip install mayavi
 pip install --upgrade notebook
 jupyter nbextension install --py mayavi --user
-
+jupyter nbextension enable mayavi --user --py
 ###
 ### destination for NIH HPC bind mounts
 ###

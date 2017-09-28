@@ -31,9 +31,7 @@ pip install setuptools wheel Pillow scikit-learn pandas matplotlib ipython==5.5.
 #pip install git+https://github.com/edraizen/3DUnetCNN.git
 pip install h5py
 pip install mayavi
-
-pip install git+https://github.com/jupyter/notebook.git
-
+pip install --upgrade notebook
 jupyter nbextension install --py mayavi --user
 
 ###

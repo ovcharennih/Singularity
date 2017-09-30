@@ -30,7 +30,6 @@ pip install keras==2.0.8
 pip install setuptools wheel Pillow scikit-learn pandas matplotlib ipython==5.5.0
 #pip install git+https://github.com/edraizen/3DUnetCNN.git
 pip install h5py
-pip install pyside
 pip install mayavi
 pip install --upgrade notebook
 jupyter nbextension install --py mayavi --user

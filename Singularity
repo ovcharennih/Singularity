@@ -24,17 +24,18 @@ apt-get install -y libhdf5-dev graphviz locales python python-pip git xvfb
 locale-gen en_US.UTF-8
 apt-get clean
 
-pip install --upgrade pip
-pip install tensorflow-gpu==1.3.0
-pip install keras==2.0.8
-pip install setuptools wheel Pillow scikit-learn pandas matplotlib ipython==5.5.0
-#pip install git+https://github.com/edraizen/3DUnetCNN.git
-pip install h5py
-pip install pyside
-pip install mayavi
-pip install --upgrade notebook
-jupyter nbextension install --py mayavi --user
-jupyter nbextension enable mayavi --user --py
+wget https://raw.githubusercontent.com/cctbx/cctbx_project/master/libtbx/auto_build/bootstrap.py
+python boostrap.py --nproc=8
+
+base/bin/pip install --upgrade pip
+base/bin/pip install tensorflow-gpu==1.3.0
+base/bin/pip install keras==2.0.8
+base/bin/pip install setuptools wheel Pillow scikit-learn pandas matplotlib ipython==5.5.0
+base/bin/pip install h5py
+base/bin/pip install pyside
+base/bin/pip install mayavi
+base/bin/pip install --upgrade notebook
+
 ###
 ### destination for NIH HPC bind mounts
 ###

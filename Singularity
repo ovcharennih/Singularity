@@ -10,7 +10,7 @@ VERSION v3
 ################################################################################
 %environment
 ################################################################################
-export PATH=/bin:/usr/bin:/usr/local/bin:/usr/local/cuda/bin:
+export PATH=~/base/bin:/bin:/usr/bin:/usr/local/bin:/usr/local/cuda/bin:
 
 ################################################################################
 %post
@@ -24,7 +24,7 @@ apt-get install -y libhdf5-dev graphviz locales python python-pip git xvfb
 locale-gen en_US.UTF-8
 apt-get clean
 
-wget https://raw.githubusercontent.com/cctbx/cctbx_project/master/libtbx/auto_build/bootstrap.py
+curl -O https://raw.githubusercontent.com/cctbx/cctbx_project/master/libtbx/auto_build/bootstrap.py
 python boostrap.py --nproc=8
 
 base/bin/pip install --upgrade pip

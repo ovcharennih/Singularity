@@ -20,11 +20,11 @@ export PATH=~/base/bin:/bin:/usr/bin:/usr/local/bin:/usr/local/cuda/bin:
 ### install keras + tensorflow + other useful packages
 ###
 apt-get update
-apt-get install -y libhdf5-dev graphviz locales python python-pip git xvfb
+apt-get install -y wget libhdf5-dev graphviz locales python python-pip git xvfb
 locale-gen en_US.UTF-8
 apt-get clean
 
-curl -O https://raw.githubusercontent.com/cctbx/cctbx_project/master/libtbx/auto_build/bootstrap.py
+wget https://raw.githubusercontent.com/cctbx/cctbx_project/master/libtbx/auto_build/bootstrap.py
 python boostrap.py --nproc=8
 
 base/bin/pip install --upgrade pip

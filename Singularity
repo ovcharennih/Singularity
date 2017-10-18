@@ -10,7 +10,7 @@ VERSION v3
 ################################################################################
 %environment
 ################################################################################
-export PATH=~/base/bin:~/build/bin/:/bin:/usr/bin:/usr/local/bin:/usr/local/cuda/bin:
+export PATH=/usr/local/sbin:/usr/sbin:/sbin:~/base/bin:~/build/bin/:/bin:/usr/bin:/usr/local/bin:/usr/local/cuda/bin:
 
 ################################################################################
 %post

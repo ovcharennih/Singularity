@@ -27,10 +27,12 @@ apt-get clean
 wget ftp://ftp.cmbi.ru.nl/pub/software/dssp/dssp-2.0.4-linux-i386 -O /usr/local/bin/dssp
 chmod a+x /usr/local/bin/dssp
 
-git clone https://github.com/mittinatten/freesasa.git
-cd freesasa
-autoreconf -i
-./configure
+#git clone https://github.com/mittinatten/freesasa.git
+wget http://freesasa.github.io/freesasa-2.0.2.tar.gz
+tar -xzf freesasa-2.0.2.tar.gz
+cd freesasa-2.0.2
+#autoreconf -i
+./configure --enable-python-bindings --disable-json --disable-xml
 make && make install
 
 pip install --upgrade pip
@@ -41,7 +43,14 @@ pip install h5py
 pip install pyside
 pip install mayavi
 pip install --upgrade notebook
+pip install cython
 
+#git clone https://github.com/mittinatten/freesasa.git
+wget http://freesasa.github.io/freesasa-2.0.2.tar.gz
+tar -xzf freesasa-2.0.2.tar.gz
+cd freesasa-2.0.2
+./configure --enable-python-bindings --disable-json --disable-xml
+make && make install
 
 ###
 ### destination for NIH HPC bind mounts

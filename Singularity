@@ -24,17 +24,24 @@ apt-get install -y wget libhdf5-dev graphviz locales python python-pip git xvfb
 locale-gen en_US.UTF-8
 apt-get clean
 
-wget https://raw.githubusercontent.com/cctbx/cctbx_project/master/libtbx/auto_build/bootstrap.py
-python bootstrap.py --nproc=8
+wget ftp://ftp.cmbi.ru.nl/pub/software/dssp/dssp-2.0.4-linux-i386 -O /usr/local/bin/dssp
+sudo chmod a+x /usr/local/bin/dssp
 
-base/bin/pip install --upgrade pip
-base/bin/pip install tensorflow-gpu==1.3.0
-base/bin/pip install keras==2.0.8
-base/bin/pip install setuptools wheel Pillow scikit-learn pandas matplotlib ipython==5.5.0
-base/bin/pip install h5py
-base/bin/pip install pyside
-base/bin/pip install mayavi
-base/bin/pip install --upgrade notebook
+git clone https://github.com/mittinatten/freesasa.git
+cd freesasa
+autoreconf -i
+./configure
+make && make install
+
+pip install --upgrade pip
+pip install tensorflow-gpu==1.3.0
+pip install keras==2.0.8
+pip install setuptools wheel Pillow scikit-learn pandas matplotlib ipython==5.5.0
+pip install h5py
+pip install pyside
+pip install mayavi
+pip install --upgrade notebook
+
 
 ###
 ### destination for NIH HPC bind mounts

@@ -32,7 +32,7 @@ pip install tensorflow-gpu==1.3.0
 pip install keras==2.0.8
 pip install setuptools wheel Pillow scikit-learn pandas matplotlib ipython==5.5.0
 pip install h5py
-pip install pyside
+#pip install pyside
 pip install mayavi
 pip install --upgrade notebook
 pip install cython

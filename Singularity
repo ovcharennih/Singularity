@@ -25,7 +25,7 @@ locale-gen en_US.UTF-8
 apt-get clean
 
 wget ftp://ftp.cmbi.ru.nl/pub/software/dssp/dssp-2.0.4-linux-i386 -O /usr/local/bin/dssp
-sudo chmod a+x /usr/local/bin/dssp
+chmod a+x /usr/local/bin/dssp
 
 git clone https://github.com/mittinatten/freesasa.git
 cd freesasa

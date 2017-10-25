@@ -41,7 +41,7 @@ pip install cython
 wget http://freesasa.github.io/freesasa-2.0.2.tar.gz
 tar -xzf freesasa-2.0.2.tar.gz
 cd freesasa-2.0.2
-./configure --enable-python-bindings --disable-json --disable-xml
+./configure CFLAGS=-fPIC --enable-python-bindings --disable-json --disable-xml
 make && make install
 
 ###

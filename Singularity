@@ -10,7 +10,8 @@ VERSION v3
 ################################################################################
 %environment
 ################################################################################
-export PATH=/usr/local/sbin:/usr/sbin:/sbin:~/base/bin:~/build/bin/:/bin:/usr/bin:/usr/local/bin:/usr/local/cuda/bin:
+export PATH=/usr/local/sbin:/usr/sbin:/sbin:/bin:/usr/bin:/usr/local/bin:/usr/local/cuda/bin:
+export PYTHONPATH=/usr/share/pdb2pqr:
 
 ################################################################################
 %post

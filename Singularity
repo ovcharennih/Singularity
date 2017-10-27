@@ -36,8 +36,8 @@ pip install h5py
 pip install mayavi
 pip install --upgrade notebook
 pip install cython
+pip install Biopython
 
-#git clone https://github.com/mittinatten/freesasa.git
 wget http://freesasa.github.io/freesasa-2.0.2.tar.gz
 tar -xzf freesasa-2.0.2.tar.gz
 cd freesasa-2.0.2

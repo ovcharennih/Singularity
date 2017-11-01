@@ -21,7 +21,7 @@ export PYTHONPATH=/usr/share/pdb2pqr:
 ### install keras + tensorflow + other useful packages
 ###
 apt-get update
-apt-get install -y wget libhdf5-dev graphviz locales python python-pip git xvfb python-vtk pdb2pqr
+apt-get install -y wget libhdf5-dev graphviz locales python python-pip git xvfb python-vtk pdb2pqr python-pandas
 locale-gen en_US.UTF-8
 apt-get clean
 
@@ -38,7 +38,7 @@ pip install mayavi
 pip install --upgrade notebook
 pip install cython
 pip install Biopython
-pip intall --upgrade pandas
+#pip install --upgrade pandas
 
 wget http://freesasa.github.io/freesasa-2.0.2.tar.gz
 tar -xzf freesasa-2.0.2.tar.gz

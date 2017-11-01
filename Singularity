@@ -31,13 +31,14 @@ chmod a+x /usr/local/bin/dssp
 pip install --upgrade pip
 pip install tensorflow-gpu==1.3.0
 pip install keras==2.0.8
-pip install setuptools wheel Pillow scikit-learn pandas matplotlib ipython==5.5.0
+pip install setuptools wheel Pillow scikit-learn matplotlib ipython==5.5.0
 pip install h5py
 #pip install pyside
 pip install mayavi
 pip install --upgrade notebook
 pip install cython
 pip install Biopython
+pip intall --upgrade pandas
 
 wget http://freesasa.github.io/freesasa-2.0.2.tar.gz
 tar -xzf freesasa-2.0.2.tar.gz

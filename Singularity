@@ -30,8 +30,8 @@ chmod a+x /usr/local/bin/dssp
 
 wget ftp://ftp.icgeb.trieste.it/pub/CX/CX.c.gz -O /usr/local/bin/CX.c.gz
 gunzip /usr/local/bin/CX.c.gz
-gcc -o /usr/local/bin/cx /usr/local/bin/CX2.c -lm
-rm /usr/local/bin/CX2.c
+gcc -o /usr/local/bin/cx /usr/local/bin/CX.c -lm
+rm /usr/local/bin/CX.c
 
 pip install --upgrade pip
 pip install tensorflow-gpu==1.3.0

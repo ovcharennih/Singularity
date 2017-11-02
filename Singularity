@@ -29,7 +29,7 @@ wget ftp://ftp.cmbi.ru.nl/pub/software/dssp/dssp-2.0.4-linux-i386 -O /usr/local/
 chmod a+x /usr/local/bin/dssp
 
 wget ftp://ftp.icgeb.trieste.it/pub/CX/CX.c.gz -O /usr/local/bin/CX.c.gz
-tar -xzf /usr/local/bin/CX.c.gz
+gunzip /usr/local/bin/CX.c.gz
 gcc -o /usr/local/bin/cx /usr/local/bin/CX2.c -lm
 rm /usr/local/bin/CX2.c
 

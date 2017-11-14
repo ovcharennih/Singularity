@@ -34,8 +34,8 @@ gcc -o /usr/local/bin/cx /usr/local/bin/CX.c -lm
 rm /usr/local/bin/CX.c
 
 pip install --upgrade pip
-pip install tensorflow-gpu==1.4.0
-pip install keras==2.0.8
+pip install http://download.pytorch.org/whl/cu80/torch-0.2.0.post3-cp27-cp27mu-manylinux1_x86_64.whl 
+pip install torchvision
 pip install setuptools wheel Pillow scikit-learn matplotlib ipython==5.5.0
 pip install h5py
 pip install mayavi

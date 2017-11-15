@@ -49,6 +49,13 @@ cd freesasa-2.0.2
 ./configure CFLAGS=-fPIC --enable-python-bindings --disable-json --disable-xml
 make && make install
 
+cd
+apt-get install libsparsehash-dev
+git clone git@github.com:facebookresearch/SparseConvNet.git
+cd SparseConvNet/PyTorch/
+python setup.py develop
+pip install git+https://github.com/pytorch/tnt.git@master
+
 ###
 ### destination for NIH HPC bind mounts
 ###

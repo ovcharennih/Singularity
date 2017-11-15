@@ -25,14 +25,6 @@ apt-get install -y wget libhdf5-dev graphviz locales python python-pip git xvfb 
 locale-gen en_US.UTF-8
 apt-get clean
 
-wget ftp://ftp.cmbi.ru.nl/pub/software/dssp/dssp-2.0.4-linux-i386 -O /usr/local/bin/dssp
-chmod a+x /usr/local/bin/dssp
-
-wget ftp://ftp.icgeb.trieste.it/pub/CX/CX.c.gz -O /usr/local/bin/CX.c.gz
-gunzip /usr/local/bin/CX.c.gz
-gcc -o /usr/local/bin/cx /usr/local/bin/CX.c -lm
-rm /usr/local/bin/CX.c
-
 pip install --upgrade pip
 pip install tensorflow-gpu==1.4.0
 pip install keras==2.0.8
